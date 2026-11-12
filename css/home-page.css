@@ -1,0 +1,191 @@
+body {
+    overflow-x: hidden !important;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url(../Roboto_Condensed/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoCondensed-Light;
+    src: url(../Roboto_Condensed/RobotoCondensed-Light.ttf);
+}
+
+h1 {
+    font-family: RobotoCondensed-Bold;
+}
+
+h2 {
+    font-family: RobotoCondensed-Bold;
+}
+
+h4 {
+    font-family: RobotoCondensed-Bold;
+}
+
+h3 {
+    font-family: RobotoCondensed-Bold;
+}
+
+a {
+    font-family: RobotoCondensed-Light;
+}
+
+p {
+    font-family: RobotoCondensed-Light;
+}
+
+.head {
+    background: rgba(0, 0, 0, 0.5) url(../image/caffe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 96vh;
+    background-blend-mode: darken;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    width: 350px;
+}
+
+span {
+    color: chocolate;
+    margin-right: 15px;
+}
+
+.text h1 {
+    font-size: 65px;
+    margin: 0;
+}
+
+.text p {
+    margin-bottom: 35px;
+}
+
+.text a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid #9198e5;
+    padding: 10px;
+}
+
+.text a:hover {
+    text-decoration: none;
+    color: #9198e5 !important;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+
+a h2:hover {
+    color: chocolate;
+    transition-duration: 1s;
+}
+
+a h1:hover {
+    color: chocolate;
+    transition-duration: 1s;
+}
+
+.location {
+    position: relative;
+    top: 70%;
+    padding: 15px;
+}
+
+.location .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.location .row .col i {
+    margin-right: 10px;
+}
+
+.dropDown .row {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#e66465, #9198e5);
+
+}
+
+ul li .dropDown {
+    display: none;
+
+}
+
+ul li:hover .dropDown {
+    display: block;
+    transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    color: whitesmoke;
+    border: 1px solid black;
+    padding: 15px;
+    z-index: 200;
+}
+
+.dropDown .row {
+    width: 600px !important;
+    height: 400px;
+    background: linear-gradient(#a18262, black);
+    display: flex;
+    padding: 10px;
+}
+
+.dropDown .row .col {
+    flex-basis: 50%;
+}
+
+.dropDown .row .col img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
