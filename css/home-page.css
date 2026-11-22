@@ -16,16 +16,6 @@ body {
     overflow-x: hidden !important;
 }
 
-@font-face {
-    font-family: RobotoCondensed-Bold;
-    src: url(../Roboto_Condensed/RobotoCondensed-Bold.ttf);
-}
-
-@font-face {
-    font-family: RobotoCondensed-Light;
-    src: url(../Roboto_Condensed/RobotoCondensed-Light.ttf);
-}
-
 h1 {
     font-family: RobotoCondensed-Bold;
 }
