@@ -62,6 +62,7 @@
       <h1>Reservation</h1>
     </div>
   </div>
+
   <main>
     <section class="fifth-part">
       <article>
@@ -71,45 +72,50 @@
             Book your table in advance and let us prepare a memorable dining experience for you.
           </p>
         </div>
-        <div class="row">
-          <div class="col">
-            <input type="text" id="name" name="name" placeholder="Full Name" />
+
+        <form onsubmit="alert('Your reservation was completed successfully!'); return false;">
+          <div class="row">
+            <div class="col">
+              <input type="text" id="name" name="name" placeholder="Full Name" required />
+            </div>
+            <div class="col">
+              <select name="person" id="person" required>
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="5">5 Persons</option>
+              </select>
+            </div>
           </div>
-          <div class="col">
-            <select name="person" id="person">
-              <option value="1">1 Person</option>
-              <option value="2">2 Persons</option>
-              <option value="3">3 Persons</option>
-              <option value="4">4 Persons</option>
-              <option value="5">5 Persons</option>
-            </select>
+          <div class="row">
+            <div class="col">
+              <input type="number" id="phonenumber" name="phonenumber" placeholder="Phone Number" required />
+            </div>
+            <div class="col">
+              <input type="date" name="date" id="date" required />
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <input type="number" id="phonenumber" name="phonenumber" placeholder="Phone Number" />
+          <div class="row">
+            <div class="col">
+              <input type="email" id="email" name="email" placeholder="Email Address" required />
+            </div>
+            <div class="col">
+              <input type="time" name="time" id="time" required />
+            </div>
           </div>
-          <div class="col">
-            <input type="date" name="date" id="date" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <input type="email" id="email" name="email" placeholder="Email Address" />
-          </div>
-          <div class="col">
-            <input type="time" name="time" id="time" />
-          </div>
-        </div>
-        <a class="reserved" href="#" onclick="alert('Your reservation was completed successfully!'); return false;">
-          <h3>Reserve a Table</h3>
-        </a>
+          <button type="submit" class="reserved">
+            <h3>Reserve a Table</h3>
+          </button>
+        </form>
       </article>
     </section>
+
     <aside class="map">
-      <img src="../image/pristina_map.png" alt="" />
-      </div>
+      <img src="../image/pristina_map.png" alt="Location map" />
+    </aside>
   </main>
+
   <footer>
     <div class="footer">
       <div class="row">
@@ -146,7 +152,6 @@
                   <i class="fa-solid fa-envelope"></i>
                 </span>
                 erinahoxhaxhiku24@gmail.com
-
               </p>
             </li>
           </ul>
@@ -157,7 +162,7 @@
           <p>8Pm-8Am</p>
         </div>
       </div>
-      </aside>
+    </div>
   </footer>
 </body>
 

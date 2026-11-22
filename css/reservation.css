@@ -12,30 +12,14 @@ html {
   overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden !important;
-}
-
-h1 {
-  font-family: RobotoCondensed-Bold;
-}
-
-h2 {
-  font-family: RobotoCondensed-Bold;
-}
-
+h1,
+h2,
+h3,
 h4 {
   font-family: RobotoCondensed-Bold;
 }
 
-h3 {
-  font-family: RobotoCondensed-Bold;
-}
-
-a {
-  font-family: RobotoCondensed-Light;
-}
-
+a,
 p {
   font-family: RobotoCondensed-Light;
 }
@@ -69,15 +53,12 @@ header nav ul li a {
   color: whitesmoke;
 }
 
-a h2:hover {
-  color: chocolate;
-  transition-duration: 1s;
-}
-
+a h2:hover,
 a h1:hover {
   color: chocolate;
   transition-duration: 1s;
 }
+
 .footer p:hover {
   color: #fff;
   transition: 1s;
@@ -86,25 +67,17 @@ a h1:hover {
 .text {
   position: relative;
   left: 50%;
-  top: 20%;
-  transform: translate(-5%, -50%);
+  top: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: whitesmoke;
 }
 
 .fifth-part article {
   margin-bottom: 25px;
   background-color: rgb(231, 231, 231);
-  height: 70vh;
-  padding: 55px;
-}
-
-.reserved {
-  margin-top: 20px;
-}
-
-.reserved:hover {
-  color: chocolate;
-  transition: 0.5s;
+  min-height: 70vh;
+  padding: 55px 25px;
 }
 
 .fifth-part article .extraNewText {
@@ -134,25 +107,37 @@ select {
   height: 54px;
   border: none;
   margin-top: 10px;
+  padding: 0 12px;
+  box-sizing: border-box;
 }
 
 .reserved {
   text-decoration: none;
   color: black;
+  background-color: transparent;
   border: 1px solid chocolate;
   padding-left: 20px;
   padding-right: 20px;
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
-  top: 10%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.reserved:hover {
+  color: chocolate;
 }
 
 .map img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  display: block;
 }
 
 .footer {
@@ -211,7 +196,7 @@ select {
     margin: 0;
   }
 
-  header nav{
+  header nav {
     display: block;
   }
 
@@ -222,10 +207,13 @@ select {
 
   .head {
     width: auto;
+    height: auto;
+    padding-bottom: 40px;
   }
 
   .text {
-    top: 65%;
+    top: 20px;
+    transform: translateX(-50%);
   }
 
   .head h2,
@@ -245,15 +233,9 @@ select {
   }
 
   .fifth-part article {
-    height: 85vh;
-    padding: 0;
-    margin: 0;
-  }
-
-  .map img {
-    width: auto;
     height: auto;
-    object-fit: cover;
+    padding: 20px 0 40px;
+    margin: 0;
   }
 
   .footer .row {
@@ -262,26 +244,24 @@ select {
     justify-content: space-around;
   }
 
-
   .fifth-part article h2 {
     padding-top: 30px;
   }
-  .map{
+
+  .map {
     width: 100%;
   }
-  .map img{
+
+  .map img {
     width: 100%;
   }
 
   .fifth-part article .extraNewText p {
     margin: 0 auto;
     width: 80%;
- 
- }
- .text {
-  top: 71%;
-}
-.location{
-  display: none;
-}
+  }
+
+  .location {
+    display: none;
+  }
 }
