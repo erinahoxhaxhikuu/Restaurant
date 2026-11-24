@@ -58,7 +58,6 @@ a:hover {
   transition: 0.5s;
 }
 
-/* Seksioni Menu options */
 .third-part {
   margin-top: 50px;
 }
@@ -67,7 +66,7 @@ a:hover {
   text-align: center;
 }
 
-.third-part .txt > p {
+.third-part .txt>p {
   max-width: 720px;
   margin: 10px auto 35px;
   padding: 0 20px;
@@ -134,7 +133,6 @@ a:hover {
   margin: 0;
 }
 
-/* Seksioni Our featured dishes */
 .fourth-part {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -175,7 +173,6 @@ span {
   margin-right: 15px;
 }
 
-/* Seksioni Rezervimit */
 .fifth-part article {
   margin-bottom: 25px;
   background-color: rgb(231, 231, 231);
@@ -243,7 +240,6 @@ select {
   display: block;
 }
 
-/* Footer */
 .footer {
   background-color: black;
   padding: 10px;
@@ -302,13 +298,103 @@ select {
   background: linear-gradient(to right, transparent, #c59b6d, transparent);
 }
 
-/* Responsive për ekrane të vogla */
-@media only screen and (max-width: 734px) {
-  body {
-    overflow-x: hidden !important;
-    margin: 0;
+/* 1. Desktop te gjer (1051px e lart) */
+@media only screen and (min-width: 1051px) {
+  .third-part .row,
+  .fifth-part article .row,
+  .footer .row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
   }
 
+  .fourth-part .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .fourth-part .row .col img {
+    width: 100%;
+    height: 202px;
+    object-fit: cover;
+  }
+}
+
+/* 2. per Tableta (deri ne 1050px - perfshire iPad Pro) */
+@media only screen and (max-width: 1050px) {
+  .head {
+    height: auto;
+    min-height: 55vh;
+    padding-bottom: 30px;
+  }
+
+  header nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .third-part .row,
+  .fifth-part article .row,
+  .footer .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+  .third-part .row .col,
+  .fifth-part article .row .col,
+  .footer .row .col {
+    flex: 1;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .fifth-part article .row .col input,
+  .fifth-part article .row .col select {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto 0;
+  }
+
+  .fifth-part article .extraNewText p,
+  .fourth-part .extraText {
+    width: 75%;
+  }
+
+  .fourth-part .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 25px;
+  }
+
+  .fourth-part .row .col img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .fourth-part .row .col p {
+    width: 100%;
+  }
+
+  .footer .row {
+    text-align: center;
+  }
+}
+
+/* 3. Telefon (deri ne 734px) */
+@media only screen and (max-width: 734px) {
   header nav {
     display: block;
   }
@@ -316,10 +402,7 @@ select {
   header nav ul {
     display: block;
     text-align: center;
-  }
-
-  .head {
-    width: auto;
+    padding-top: 15px;
   }
 
   .head h2,
@@ -327,79 +410,30 @@ select {
     margin-top: 0;
   }
 
-  .head ul {
-    padding-top: 20px;
-  }
-
   .third-part .row {
-    display: block;
-    margin: 0 auto;
+    padding: 0 15px;
   }
 
   .third-part .row .col {
-    margin-bottom: 25px;
-    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
-  .fourth-part .row {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-left: 0;
+  .third-part .row .col img {
     margin-right: 0;
+    margin-bottom: 10px;
   }
 
-  .fourth-part .row .col img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .fourth-part .row .col p {
-    width: 100%;
-  }
-
-  .fifth-part article .row {
-    display: block;
-    justify-content: center;
-    margin-top: 15px;
+  .third-part .row .col .txt {
     text-align: center;
   }
 
-  .fifth-part article .row .col {
-    margin-right: 0;
-  }
-
-  .fifth-part article .row .col input,
-  .fifth-part article .row .col select {
-    max-width: 90%;
-  }
-
-  .fifth-part article {
-    height: auto;
-    padding: 20px 0 40px;
-    margin: 0;
-  }
-
-  .fifth-part article h2 {
-    padding-top: 35px;
-  }
-
-  .fourth-part .extraText {
-    width: 80%;
-    margin: 0 auto 25px;
-    text-align: center;
-  }
-
-  .footer .row {
-    display: block;
-    text-align: center;
-    justify-content: space-around;
-  }
-
-  .fifth-part article .extraNewText p,
-  .extraNewText p.specialColor {
-    text-align: center;
-    width: 80%;
+  .third-part .item-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 
   .money {
@@ -407,8 +441,40 @@ select {
     font-size: 22px;
   }
 
-  .text {
-    top: 71%;
+  .fourth-part .row {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .fourth-part .row .col img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fourth-part .extraText {
+    width: 85%;
+    margin: 0 auto 25px;
+  }
+
+  .fifth-part article {
+    height: auto;
+    padding: 25px 15px 40px;
+    margin: 0;
+  }
+
+  .fifth-part article .row {
+    padding: 0;
+  }
+
+  .fifth-part article .row .col input,
+  .fifth-part article .row .col select {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .fifth-part article .extraNewText p {
+    width: 90%;
   }
 
   .location {
