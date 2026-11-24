@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(15, 15, 15);
+  font-family: "Roboto Condensed";
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  font-family: "Roboto Condensed";
+  font-size: 17px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  background-color: rgb(15, 15, 15);
+  padding: 15px 20px;
+  border-bottom: 2px solid chocolate;
+  border-top: 2px solid chocolate;
+}
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+nav a:hover {
+  color: chocolate;
+}
+
+.aboutTop {
+  height: 400px;
+  padding: 120px 20px 50px;
+  text-align: center;
+  color: whitesmoke;
+  background-image: url(../image/interior2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutTop h1 {
+  font-family: "Roboto Condensed";
+  font-size: 32px;
+  margin-bottom: 15px;
+  width: 90%;
+  text-align: center;
+}
+.aboutTop p {
+  font-size: 20px;
+  color: whitesmoke;
+  width: 90%;
+  text-align: center;
+}
+.aboutStory {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  color: whitesmoke;
+  background-color: #333;
+}
+.aboutStory .text {
+  width: 50%;
+}
+.aboutStory .text h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+.aboutStory .text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+.aboutStory img {
+  width: 45%;
+  border-radius: 10px;
+  border: 2px solid chocolate;
+  margin-top: 20px;
+}
+.aboutStory .text .readMore {
+  padding: 12px 25px;
+  background: chocolate;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: whitesmoke;
+  font-weight: 600;
+  font-family: "Roboto Condensed";
+}
+.aboutStory .text .readMore:hover {
+  background-color: whitesmoke;
+  color: #333;
+}
+.quality {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: whitesmoke;
+  padding: 50px 30px;
+}
+.quality .first {
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  padding: 20px 20px;
+  width: 30%;
+}
+.quality .first h2 {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+.quality .first p {
+  font-size: 18px;
+}
+.quality .second {
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  padding: 20px 20px;
+  width: 30%;
+}
+.quality .second h2 {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+.quality .second p {
+  font-size: 18px;
+}
+.quality .third {
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  padding: 20px 20px;
+  width: 30%;
+}
+.quality .third h2 {
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+.quality .third p {
+  font-size: 18px;
+}
+.mission {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  color: whitesmoke;
+  background-color: #333;
+}
+.mission img {
+  width: 45%;
+  border-radius: 10px;
+  border: 2px solid chocolate;
+  margin-top: 20px;
+}
+.mission .missionText {
+  width: 50%;
+}
+.mission .missionText h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+.mission .missionText p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
