@@ -190,6 +190,26 @@ select {
   border-radius: 2px;
 }
 
+@media only screen and (max-width: 1050px) {
+  .fifth-part article {
+    margin-bottom: 25px;
+    background-color: rgb(231, 231, 231);
+    min-height: 40vh;
+    padding: 55px 25px;
+  }
+
+  .extraNewText h2 {
+    font-size: 40px;
+  }
+
+  .fifth-part article .extraNewText p {
+    width: 35%;
+    font-size: 20px;
+    margin: -20px auto 0 auto;
+  }
+
+}
+
 @media only screen and (max-width: 734px) {
   body {
     overflow-x: hidden !important;
@@ -233,9 +253,10 @@ select {
   }
 
   .fifth-part article {
-    height: auto;
-    padding: 20px 0 40px;
-    margin: 0;
+    margin-bottom: 25px;
+    background-color: rgb(231, 231, 231);
+    min-height: 40vh;
+    padding: 55px 25px;
   }
 
   .footer .row {
