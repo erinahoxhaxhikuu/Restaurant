@@ -5,14 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/register.css" />
+
     <script src="https://kit.fontawesome.com/3c63bc7a17.js" crossorigin="anonymous"></script>
+
     <title>Reservation</title>
 </head>
 
 <body>
+
     <div class="head">
+
         <header>
             <nav>
                 <ul>
@@ -32,6 +37,7 @@
                         </a>
                     </li>
                 </ul>
+
                 <ul>
                     <li>
                         <a href="../html/home-page.html">
@@ -39,6 +45,7 @@
                         </a>
                     </li>
                 </ul>
+
                 <ul>
                     <li>
                         <a href="../html/register.html">
@@ -59,27 +66,59 @@
             </nav>
         </header>
 
+        <br><br>
+
         <main class="reg">
+
             <section class="texti">
                 <h1 class="titulli">Create account</h1>
                 <p class="pershkrimi">Create an account so you can taste our food</p>
             </section>
-        <form action="">
 
-        </form>
+            <form onsubmit="alert('Your account was created successfully!'); return false;">
 
+                <div class="row">
+                    <div class="col">
+                        <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="password" id="password" name="password" placeholder="Password"
+                            autocomplete="new-password" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <input type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Confirm Password" autocomplete="new-password" required />
+                    </div>
+                </div>
+
+                <button type="submit" class="reserved">
+                    <h3>Sign up</h3>
+                </button>
+
+                <br><br>
+
+                <a class="linku" href="/html/login.html">Already have an account</a>
+
+            </form>
 
         </main>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <aside class="map">
             <img src="../image/pristina_map.png" alt="Location map" />
         </aside>
-        </main>
 
         <footer>
+
             <div class="footer">
+
                 <div class="row">
+
                     <div class="col">
                         <h3>About us</h3>
                         <p>
@@ -87,8 +126,10 @@
                             dishes in a welcoming setting for every occasion.
                         </p>
                     </div>
+
                     <div class="col">
                         <h3>Contact Info</h3>
+
                         <ul>
                             <li>
                                 <p>
@@ -98,6 +139,7 @@
                                     Prishtina, Kosovo
                                 </p>
                             </li>
+
                             <li>
                                 <p>
                                     <span>
@@ -106,6 +148,7 @@
                                     +383-45-498-382
                                 </p>
                             </li>
+
                             <li>
                                 <p>
                                     <span>
@@ -116,14 +159,21 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="col">
                         <h3>Opening Hours</h3>
                         <p>Monday-Friday</p>
                         <p>8Pm-8Am</p>
                     </div>
+
                 </div>
+
             </div>
+
         </footer>
+
+    </div>
+
 </body>
 
 </html>
